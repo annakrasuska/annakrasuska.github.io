@@ -1,0 +1,237 @@
+@charset "UTF-8";
+
+/* STYLE GLOBALNE */
+@import url('https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Overpass+Mono:wght@300..700&display=swap');
+
+*{
+	transition: 1s;
+}
+html{
+	scroll-behavior: smooth;
+	font-family: "Overpass mono";
+  	font-weight: 300;
+	font-size: 10px;
+	line-height: 100%;
+}
+body{
+	font-size: 1.6rem;
+	background-color: #ebebeb;
+	max-width: 1200px;
+	display: flex;
+	flex-direction: column;
+	color: #000000;
+}
+
+/* NAWIGACJA MOBILE*/
+.burger{
+    font-size: 2em;
+    position: fixed;
+    right: 0.5em;
+    top: 0.5em;
+    display: none;
+    cursor: pointer;
+}
+.nakladka{
+    background-color: rgba(0,0,0,0.95);
+    position: fixed;
+    height: 100%;
+    width: 0;
+    transition: 1s;
+    right: 0;
+    overflow: hidden;/*nic nie wystaje poza ten box*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+.nakladka ol{
+	text-align: center;
+}
+.nakladka ol li a{
+    text-decoration: none;
+    color: white;
+	font-family: Newsreader;
+	text-transform: uppercase;
+    font-size: 4rem;
+    padding: 1rem 4rem 1rem 4rem;
+    display: block;
+    transition: 500ms;
+	border-radius: 2rem;
+}
+.nakladka ol li a:hover{
+	letter-spacing: -0.2rem;
+	font-size: 3.6rem;
+}
+.zamknijX{
+    text-decoration: none;
+    color: white;
+    position: absolute;
+    font-size: 3em;
+    top: 0.5em;
+    right: 0.5em;
+	z-index: 3;
+}
+
+/* NAWIGACJA */
+
+nav{
+	border-bottom: 0.1rem solid rgba(255, 255, 255, 0.40);
+	background-color: rgba(255, 255, 255, 0.005);
+	backdrop-filter: blur(1.6rem);
+	position: sticky;
+	width: 100vw;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	z-index: 1;
+	mix-blend-mode: difference;
+}
+nav ol{
+	display: flex;
+	padding: 2rem 6rem 2rem 6rem;
+	gap: 1.6rem;
+}	
+nav ol logo a{
+	text-decoration: none;
+	font-size: 2.4rem;
+	color: #ffffff;
+	letter-spacing: -0.2rem;
+	line-height: 180%;
+	white-space: nowrap;
+}
+nav ol li{
+	border-radius: 0.8rem;
+	border: solid 0.1rem rgba(255, 255, 255, 0.40);
+	align-items: center;
+
+}
+nav ol li a{
+	text-decoration: none;
+	color: #fff;
+	display: flex;
+	padding: 1.2rem 3.2rem 1.2rem 3.2rem;
+	align-items: center;
+}
+nav ol li a:hover{
+	background-color: #ffffff;
+	color: #000000;
+	font-weight: 300;
+	border-radius: 0.8rem;
+}
+
+/* WSZYSTKIE SEKCJE */
+.section{
+	width: 100vw;
+	height: 100vh;
+	align-items: center;
+	justify-content: center;
+}
+
+/* POSZCZEGÓLNE SEKCJE */
+#projekty{
+	position: -webkit-sticky; /* Safari */
+  	position: sticky;
+	top: 0;
+	z-index: -2;
+	width: 100vw;
+	text-transform: uppercase;
+	color: #000000;
+}
+#projekty img{
+	width: 100vw;
+}
+#projekty video{
+	width: 100vw;
+}
+
+#projekty .opis{
+	padding: 4rem 6rem 4rem 6rem;
+	display: grid;
+	grid-auto-flow: column;
+	grid-template-columns: repeat(3, minmax(0, 1fr));
+	gap: 3.2rem;
+}
+
+#projekty article{
+	display: flex;
+	flex-direction: column;
+	gap: 0.8rem;
+}
+
+#projekty h2{
+	font-family: newsreader;
+	font-weight: 400;
+	font-size: 1.8rem;
+}
+#projekty p{
+	font-weight: 100;
+	font-size: 1.4rem;
+	line-height: 120%;
+}
+
+#projekty .buttons{
+	display: flex;
+	justify-content: space-between;
+	padding: 6rem;
+}
+
+#projekty a:hover{
+	background-color: #000000;
+	color: #ffffff;
+	border-radius: 0.8rem;
+}
+
+#projekty a{
+	background-color: #FAFF00;
+	color: #000000;
+	text-decoration: none;
+	padding: 1.2rem 2.4rem;
+	font-family: overpass mono;
+	font-size: 1.6rem;
+}
+
+#projekty h1{
+	padding-left: 6rem;
+	padding-top: 6rem;
+	font-family: newsreader;
+	text-transform: uppercase;
+	font-size: 4rem;
+	font-weight: 300;
+}
+
+/***********RWD*************/
+/***********RWD*************/
+/***********RWD*************/
+/***********RWD*************/
+/* Media Queries - reguła która może wykryć urządzenie i jego szerokość */
+@media all and (max-width:1000px) {
+	nav{
+		display: none;
+	}
+	
+	.burger{
+		display: block;
+		background-color: white;
+		padding: 1rem 1.2rem 1rem;
+		border-radius: 1rem;
+				position: fixed;
+		z-index: 1;
+	}
+}
+@media all and (max-width:520px) {
+	
+	#projekty h1{
+		padding:4rem 2rem;
+	}
+	
+	#projekty .opis{
+		padding: 2rem;
+		gap: 1.6rem;
+	}
+	
+	#projekty .buttons{
+		padding: 4rem 2rem;
+		}
+	}
+/*END*/

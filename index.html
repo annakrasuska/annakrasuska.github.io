@@ -1,0 +1,218 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Anna Krasuska | Portfolio</title>
+	<link rel="stylesheet" type="text/css" href="./css/reset.css">
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
+	<!-- responsywność -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<span id="top-anchor"></span>
+	<!-- NAV MOBILE-->
+	<span class="burger" onClick="otworzMenu()">&#9776;</span>
+	<!--SKRYPT URUCHAMIAJĄCY MENU-->
+	<script>
+		function otworzMenu() {
+			document.getElementById("MENU").style.width = "100%";
+		}
+		function zamknijMenu() {
+			document.getElementById("MENU").style.width = "0";
+		}
+	</script>
+	<!--pełnoekranowa nakładka z pozycjami menu-->
+	<div class="nakladka" id="MENU">
+		<a href="javascript:void(0)" class="zamknijX" onClick="zamknijMenu()">&times;</a>
+		<ol>
+			<li><a href="#top-anchor" onClick="zamknijMenu()">Home</a></li>
+			<li><a href="#portfolio-anchor" onClick="zamknijMenu()">Portfolio</a></li>
+			<li><a href="#about-anchor" onClick="zamknijMenu()">About</a></li>
+			<li><a href="#services-anchor" onClick="zamknijMenu()">Services</a></li>
+			<li><a href="#stopka" onClick="zamknijMenu()">Contact</a></li>
+		</ol>
+	</div>
+
+	<!--NAWIGACJA DESKTOP-->
+
+	<nav>
+		<ol>
+			<logo>
+				<a href="#top-anchor">Anna Krasuska</a>
+			</logo>
+		</ol>
+		<ol>
+			<li>
+				<a href="#portfolio-anchor">Portfolio</a>
+			</li>
+			<li>
+				<a href="#about-anchor">About</a>
+			</li>
+			<li>
+				<a href="#services-anchor">Services</a>
+			</li>
+			<li>
+				<a href="#stopka">Contact</a>
+			</li>
+		</ol>
+	</nav>
+
+	<!--SEKCJE-->
+	<section id="sekcja1" class="section">
+		<div class="zawartosc">
+			<video class="video" loop muted autoplay poster="./img/s1_video_cover.webp">
+				<source src="./video/showreel1.mp4" type="video/mp4">
+			</video>
+		</div>
+	</section>
+	<span id="about-anchor"></span>
+	<section id="sekcja2" class="section">
+		<div class="zawartosc">
+			<div class="photo">
+				<img src="img/1150950.jpg" alt="portret anna krasuska">
+			</div>
+			<div class="text">
+				<h2>About me</h2>
+				<p>My name is Ania. I am a digital and brand designer, bringing solutions for web, social media and
+					beyond. Currently based in Warsaw, Poland</p>
+				<div class="buttons">
+					<div class="git">
+						<a href="#stopka">Get in touch</a>
+					</div>
+					<div class="services">
+						<a href="#sekcja3">Services ↓</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<span id="services-anchor"></span>
+	<section id="sekcja3" class="section">
+		<div class="zawartosc">
+			<h3>Services</h3>
+			<article>
+				<div>UI Design</div>
+				<div>UX Desgin</div>
+				<div>Branding</div>
+				<div>Animation</div>
+				<div>Social media</div>
+				<div>Illustration</div>
+				<div>Print</div>
+			</article>
+			<article>
+				<a href="#sekcja4">Projects ↓</a>
+			</article>
+		</div>
+	</section>
+	<span id="portfolio-anchor"></span>
+	<section id="sekcja4" class="section">
+		<a href="./01 scentcreatives/index.html"><div class="zawartosc">
+			<div class="projekt">
+				<article>
+					<img src="img/sc.png" alt="project picture scent creatives">
+					<div class="text">
+						<p>01</p>
+						<h4>ScentCreatives</h4>
+						<p>Social media, branding</p>
+					</div>
+				</article>
+			</div>
+		</a>
+		<a href="02 agata/index.html">
+		<div class="projekt">
+			<article>
+				<img src="img/agatakrasuska.png" alt="project picture agata krasuska make up">
+					<div class="text">
+						<p>02</p>
+						<h4>Agata Krasuska</h4>
+						<p>Social media, branding</p>
+					</div>
+			</article>
+		</div>
+		</a>
+		<a href="03 lilije/index.html">
+			<div class="projekt">
+				<article>
+					<img src="img/lilije.png" alt="project picture lilije flower shop">
+					<div class="text">
+						<p>03</p>
+						<h4>Lilije</h4>
+						<p>Web design, social media, branding</p>
+					</div>
+				</article>
+			</div>
+			</a>
+			<a href="04 cup up/index.html">
+			<div class="projekt">
+				<article>
+					<img src="img/cupup.png" alt="project picture cup up">
+					<div class="text">
+						<p>04</p>
+						<h4>CupUp</h4>
+						<p>Social media</p>
+					</div>
+				</article>
+			</div>
+			</a>
+			<a href="05 poznanie/index.html">
+			<div class="projekt">
+				<article>
+					<img src="img/poznanie.png" alt="project picture poznanie psychoterapia">
+					<div class="text">
+						<p>05</p>
+						<h4>Poznanie</h4>
+						<p>branding, social media, web design</p>
+					</div>
+				</article>
+			</div>
+			</a>
+			<a href="06 jagielska/index.html">
+			<div class="projekt">
+				<article>
+					<img src="img/jagielska.png" alt="project picture jagielska biżuteria">
+					<div class="text">
+						<p>06</p>
+						<h4>Jagielska</h4>
+						<p>Web design</p>
+					</div>
+				</article>
+			</div>
+			</a>
+			<a href="07 bb/index.html">
+			<div class="projekt">
+				<article>
+					<img src="img/bb.png" alt="project picture beans boogie">
+					<div class="text">
+						<p>07</p>
+						<h4>Beans Boogie</h4>
+						<p>Branding, packaging</p>
+					</div>
+				</article>
+			</div>
+			</a>
+	</section>
+	<!-- <span id="portfolio-anchor"></span> -->
+	<section id="stopka" class="section">
+		<div class="zawartosc">
+			<article>
+
+				<h5>Socials</h5>
+				<a href="https://instagram.com/iamkrasuska">Instagram</a>
+				<a href="https://behance.net/annakrasuska">Behance</a>
+
+			</article>
+			<article>
+				<h5>Contact</h5>
+				<a href="mailto:iamkrasuska@gmail.com">iamkrasuska@gmail.com</a>
+				<a href="callto:+48504010567">+48 504 010 567</a>
+			</article>
+		</div>
+	</section>
+	<section id="copy">
+		<h6>&copy; Anna Krasuska, 2024.</h6>
+	</section>
+</body>
+
+</html>

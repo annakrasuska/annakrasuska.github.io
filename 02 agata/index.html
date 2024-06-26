@@ -1,0 +1,95 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Anna Krasuska | Portfolio</title>
+	<link rel="stylesheet" type="text/css" href="../02 agata/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="../02 agata/css/style.css">
+	<!-- responsywność -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<span id="top-anchor"></span>
+	<!-- NAV MOBILE-->
+	<span class="burger" onClick="otworzMenu()">&#9776;</span>
+	<!--SKRYPT URUCHAMIAJĄCY MENU-->
+	<script>
+		function otworzMenu() {
+			document.getElementById("MENU").style.width = "100%";
+		}
+		function zamknijMenu() {
+			document.getElementById("MENU").style.width = "0";
+		}
+	</script>
+	<!--pełnoekranowa nakładka z pozycjami menu-->
+	<div class="nakladka" id="MENU">
+		<a href="javascript:void(0)" class="zamknijX" onClick="zamknijMenu()">&times;</a>
+		<ol>
+			<li><a href="../index.html" onClick="zamknijMenu()">Home</a></li>
+			<li><a href="../index.html#portfolio-anchor" onClick="zamknijMenu()">Portfolio</a></li>
+			<li><a href="../index.html#about-anchor" onClick="zamknijMenu()">About</a></li>
+			<li><a href="../index.html#services-anchor" onClick="zamknijMenu()">Services</a></li>
+			<li><a href="../index.html#stopka" onClick="zamknijMenu()">Contact</a></li>
+		</ol>
+	</div>
+
+	<!--NAWIGACJA DESKTOP-->
+
+	<nav>
+		<ol>
+			<logo>
+				<a href="../index.html#top-anchor">Anna Krasuska</a>
+			</logo>
+		</ol>
+		<ol>
+			<li>
+				<a href="../index.html#portfolio-anchor">Portfolio</a>
+			</li>
+			<li>
+				<a href="../index.html#about-anchor">About</a>
+			</li>
+			<li>
+				<a href="../index.html#services-anchor">Services</a>
+			</li>
+			<li>
+				<a href="../index.html#stopka">Contact</a>
+			</li>
+		</ol>
+	</nav>
+
+	<!--SEKCJE-->
+	<section id="projekty" class="section">
+		<h1>Agata Krasuska make up</h1>
+		<div class="opis">
+			<article>
+				<h2>Client:</h2>
+				<p>make up artist.</p>
+			</article>
+			<article>
+				<h2>Scope of work:</h2><p>branding, social media, icon system.</p>
+			</article>
+			<article>
+				<h2>Goal:</h2>
+				<p>to make elegent, easy to use system of rules and components for Instagram and future brand development.</p>
+			</article>
+		</div>
+		<div>
+			<img src="../02 agata/img/ak1.png" alt="Logo">
+			<img src="../02 agata/img/ak2.png" alt="Icons">
+			<img src="../02 agata/img/ak3.png" alt="Reels 1">
+			<img src="../02 agata/img/ak4.png" alt="Reels 2">
+			<img src="../02 agata/img/ak5.png" alt="Post concept">
+			<img src="../02 agata/img/ak6.png" alt="Instagram mockup">
+			<img src="../02 agata/img/ak7.png" alt="Cards mockup">
+			<img src="../02 agata/img/ak8.png" alt="Cards mockup">
+		</div>
+			<div class="buttons">
+			<a href="../01 scentcreatives/index.html">Previous project</a>
+			<a href="../03 lilije/index.html">Next project</a>
+		</div>
+	</section>
+</body>
+
+</html>

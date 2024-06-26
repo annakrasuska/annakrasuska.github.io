@@ -1,0 +1,92 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Anna Krasuska | Portfolio</title>
+	<link rel="stylesheet" type="text/css" href="../03 lilije/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="../03 lilije/css/style.css">
+	<!-- responsywność -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<span id="top-anchor"></span>
+	<!-- NAV MOBILE-->
+	<span class="burger" onClick="otworzMenu()">&#9776;</span>
+	<!--SKRYPT URUCHAMIAJĄCY MENU-->
+	<script>
+		function otworzMenu() {
+			document.getElementById("MENU").style.width = "100%";
+		}
+		function zamknijMenu() {
+			document.getElementById("MENU").style.width = "0";
+		}
+	</script>
+	<!--pełnoekranowa nakładka z pozycjami menu-->
+	<div class="nakladka" id="MENU">
+		<a href="javascript:void(0)" class="zamknijX" onClick="zamknijMenu()">&times;</a>
+		<ol>
+			<li><a href="../index.html" onClick="zamknijMenu()">Home</a></li>
+			<li><a href="../index.html#portfolio-anchor" onClick="zamknijMenu()">Portfolio</a></li>
+			<li><a href="../index.html#about-anchor" onClick="zamknijMenu()">About</a></li>
+			<li><a href="../index.html#services-anchor" onClick="zamknijMenu()">Services</a></li>
+			<li><a href="../index.html#stopka" onClick="zamknijMenu()">Contact</a></li>
+		</ol>
+	</div>
+
+	<!--NAWIGACJA DESKTOP-->
+
+	<nav>
+		<ol>
+			<logo>
+				<a href="../index.html#top-anchor">Anna Krasuska</a>
+			</logo>
+		</ol>
+		<ol>
+			<li>
+				<a href="../index.html#portfolio-anchor">Portfolio</a>
+			</li>
+			<li>
+				<a href="../index.html#about-anchor">About</a>
+			</li>
+			<li>
+				<a href="../index.html#services-anchor">Services</a>
+			</li>
+			<li>
+				<a href="../index.html#stopka">Contact</a>
+			</li>
+		</ol>
+	</nav>
+
+	<!--SEKCJE-->
+	<section id="projekty" class="section">
+		<h1>Lilije</h1>
+		<div class="opis">
+			<article>
+				<h2>Client:</h2>
+				<p>flower shop.</p>
+			</article>
+			<article>
+				<h2>Scope of work:</h2><p>branding, social media, website.</p>
+			</article>
+			<article>
+				<h2>Goal:</h2>
+				<p>to develop a visual language for small business.</p>
+			</article>
+		</div>
+		<div>
+			<img src="../03 lilije/img/lil1.png" alt="Logo">
+			<img src="../03 lilije/img/lil2.png" alt="Instagram feed">
+			<img src="../03 lilije/img/lil3.png" alt="Website concept">
+			<img src="../03 lilije/img/lil4.png" alt="Card mockup">
+			<img src="../03 lilije/img/lil5.png" alt="Sticker mockup">
+		</div>
+			<div class="buttons">
+			<a href="../02 agata/index.html">Previous project</a>
+			<a href="../04 cup up/index.html">Next project</a>
+		</div>
+	</section>
+</body>
+
+</html>

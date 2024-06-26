@@ -1,0 +1,89 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Anna Krasuska | Portfolio</title>
+	<link rel="stylesheet" type="text/css" href="../06 jagielska/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="../06 jagielska/css/style.css">
+	<!-- responsywność -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<span id="top-anchor"></span>
+	<!-- NAV MOBILE-->
+	<span class="burger" onClick="otworzMenu()">&#9776;</span>
+	<!--SKRYPT URUCHAMIAJĄCY MENU-->
+	<script>
+		function otworzMenu() {
+			document.getElementById("MENU").style.width = "100%";
+		}
+		function zamknijMenu() {
+			document.getElementById("MENU").style.width = "0";
+		}
+	</script>
+	<!--pełnoekranowa nakładka z pozycjami menu-->
+	<div class="nakladka" id="MENU">
+		<a href="javascript:void(0)" class="zamknijX" onClick="zamknijMenu()">&times;</a>
+		<ol>
+			<li><a href="../index.html" onClick="zamknijMenu()">Home</a></li>
+			<li><a href="../index.html#portfolio-anchor" onClick="zamknijMenu()">Portfolio</a></li>
+			<li><a href="../index.html#about-anchor" onClick="zamknijMenu()">About</a></li>
+			<li><a href="../index.html#services-anchor" onClick="zamknijMenu()">Services</a></li>
+			<li><a href="../index.html#stopka" onClick="zamknijMenu()">Contact</a></li>
+		</ol>
+	</div>
+
+	<!--NAWIGACJA DESKTOP-->
+
+	<nav>
+		<ol>
+			<logo>
+				<a href="../index.html#top-anchor">Anna Krasuska</a>
+			</logo>
+		</ol>
+		<ol>
+			<li>
+				<a href="../index.html#portfolio-anchor">Portfolio</a>
+			</li>
+			<li>
+				<a href="../index.html#about-anchor">About</a>
+			</li>
+			<li>
+				<a href="../index.html#services-anchor">Services</a>
+			</li>
+			<li>
+				<a href="../index.html#stopka">Contact</a>
+			</li>
+		</ol>
+	</nav>
+
+	<!--SEKCJE-->
+	<section id="projekty" class="section">
+		<h1>Jagielska</h1>
+		<div class="opis">
+			<article>
+				<h2>Client:</h2>
+				<p>jewelry brand.</p>
+			</article>
+			<article>
+				<h2>Scope of work:</h2><p>responsive website concept.</p>
+			</article>
+			<article>
+				<h2>Goal:</h2>
+				<p>to convey brand aesthetics and values to the audience.</p>
+			</article>
+		</div>
+		<div>
+			<img src="../06 jagielska/img/jag1.png" alt="elements of website concept">
+			<img src="../06 jagielska/img/jag2.png" alt="website concept">
+		</div>
+			<div class="buttons">
+			<a href="../05 poznanie/index.html">Previous project</a>
+			<a href="../07 bb/index.html">Next project</a>
+		</div>
+	</section>
+</body>
+
+</html>

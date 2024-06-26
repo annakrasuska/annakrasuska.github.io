@@ -1,0 +1,94 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Anna Krasuska | Portfolio</title>
+	<link rel="stylesheet" type="text/css" href="../01 scentcreatives/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="../01 scentcreatives/css/style.css">
+	<!-- responsywność -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<span id="top-anchor"></span>
+	<!-- NAV MOBILE-->
+	<span class="burger" onClick="otworzMenu()">&#9776;</span>
+	<!--SKRYPT URUCHAMIAJĄCY MENU-->
+	<script>
+		function otworzMenu() {
+			document.getElementById("MENU").style.width = "100%";
+		}
+		function zamknijMenu() {
+			document.getElementById("MENU").style.width = "0";
+		}
+	</script>
+		<!--pełnoekranowa nakładka z pozycjami menu-->
+	<div class="nakladka" id="MENU">
+		<a href="javascript:void(0)" class="zamknijX" onClick="zamknijMenu()">&times;</a>
+		<ol>
+			<li><a href="../index.html" onClick="zamknijMenu()">Home</a></li>
+			<li><a href="../index.html#portfolio-anchor" onClick="zamknijMenu()">Portfolio</a></li>
+			<li><a href="../index.html#about-anchor" onClick="zamknijMenu()">About</a></li>
+			<li><a href="../index.html#services-anchor" onClick="zamknijMenu()">Services</a></li>
+			<li><a href="../index.html#stopka" onClick="zamknijMenu()">Contact</a></li>
+		</ol>
+	</div>
+
+	<!--NAWIGACJA DESKTOP-->
+
+	<nav>
+		<ol>
+			<logo>
+				<a href="../index.html#top-anchor">Anna Krasuska</a>
+			</logo>
+		</ol>
+		<ol>
+			<li>
+				<a href="../index.html#portfolio-anchor">Portfolio</a>
+			</li>
+			<li>
+				<a href="../index.html#about-anchor">About</a>
+			</li>
+			<li>
+				<a href="../index.html#services-anchor">Services</a>
+			</li>
+			<li>
+				<a href="../index.html#stopka">Contact</a>
+			</li>
+		</ol>
+	</nav>
+
+	<!--SEKCJE-->
+	<section id="projekty" class="section">
+		<h1>ScentCreatives</h1>
+		<div class="opis">
+			<article>
+				<h2>Client:</h2>
+				<p>shop with fragrance components.</p>
+			</article>
+			<article>
+				<h2>Scope of work:</h2><p>branding, social media.</p>
+			</article>
+			<article>
+				<h2>Goal:</h2>
+				<p>to make a strong, colorful statement, bring attention but stay flexible.</p>
+			</article>
+		</div>
+		<div>
+			<img src="../01 scentcreatives/img/sc1.png" alt="Logo of scentcreatives placed on image of flowers">
+			<img src="../01 scentcreatives/img/sc2.png" alt="Instagram post examples">
+			<img src="../01 scentcreatives/img/sc3.png" alt="Instagram reels examples">
+			<img src="../01 scentcreatives/img/sc4.png" alt="Paper example">
+			<img src="../01 scentcreatives/img/sc5.png" alt="Bottle of a product mockup">
+			<img src="../01 scentcreatives/img/sc6.png" alt="Packaging mockup">
+			<img src="../01 scentcreatives/img/sc7.png" alt="Paper A4 ad on mockup with oranges">
+		</div>
+			<div class="buttons">
+			<a href="../07 bb/index.html">Previous project</a>
+			<a href="../02 agata/index.html">Next project</a>
+		</div>
+	</section>
+</body>
+
+</html>
